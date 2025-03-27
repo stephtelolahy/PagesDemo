@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscribe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            font-size: 5rem; /* Extra large text */
+            padding: 50px 100px; /* Huge padding */
+            width: 90vw; /* 90% of viewport width */
+            height: 50vh; /* 50% of viewport height */
+            max-width: 1000px; /* Prevents being too wide on big screens */
+            max-height: 500px; /* Prevents being too tall */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h2>Subscription Page</h2>
-    <button onclick="completeSubscription()">Complete</button>
+    <button onclick="completeSubscription()">COMPLETE</button>
 
     <script>
         function completeSubscription() {
